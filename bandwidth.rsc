@@ -10,9 +10,9 @@
     {name="Neterra"; ip=87.121.0.45; user="neterra"; pswd="neterra"; prot="tcp"};
   }
 
-  # ----------------------------------------------------------------------- # function of speed measurement
+  # --------------------------------------------------- # function of speed measurement
   :local SpeedTest do={
-    # --------------------------------------------------------------------- # digit conversion function via SI-prefix
+    # ------------------------------------------------- # digit conversion function via SI-prefix
     :local NumSiPrefix do={
       :if ([:len $1]=0) do={:return "0Bps"}
       :local inp [:tonum $1]; :local cnt 0;
@@ -32,7 +32,7 @@
 	:return "unknown error"
   }
 
-  # ----------------------------------------------------------------------- # main body of script
+  # --------------------------------------------------- # main body of script
   :local message "Bandwidth report from '$[system identity get name]':";
   :if ([:len $listIP]>0) do={
     :foreach testCh in=$listIP do={
