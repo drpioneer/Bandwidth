@@ -24,7 +24,7 @@
     }
     :local rxSpd ""; :local txSpd ""; :local rxSts ""; :local txSts ""; :local pngTst;
     /tool ping-speed address=$1 duration=11 do={:set pngTst [$NumSiPrefix [$"average"]]}
-     :local outMsg "PingSpeedTest:\t$pngTst\tBandWidthTest via $4:";
+    :local outMsg "PingSpeedTest:\t$pngTst\tBandWidthTest via $4:";
     /tool bandwidth-test address=$1 user=$2 password=$3 protocol=$4 direction="receive" duration=5 do={
       :set rxSpd [$NumSiPrefix [$"rx-total-average"]]; :set rxSts [$"status"];
     }
