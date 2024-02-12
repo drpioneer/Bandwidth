@@ -1,7 +1,7 @@
 # Bandwidth
 
 Скрипт проверки ширины канала c использованием встроенных 'PingSpeed' и 'BandWidth' тестов.
-Для полноценной проверки ширины канала на дальнем конце быть настроен BTestServer: Tools/BTestServer, Enabled=yes, Authenticate=yes.
+Для полноценной проверки ширины канала на дальнем конце должен быть настроен BTestServer: Tools/BTestServer, Enabled=yes, Authenticate=yes.
 Без BTestServer'а скрипт покажет ширину канала за счёт теста 'PingSpeed', для этого дальний конец канала должен Ping'оваться.
 
 В скрипте необходимо заполнить список каналов по шаблону:
