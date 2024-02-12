@@ -9,7 +9,7 @@
   :local listIP {
     {name="MkBwTst"; ip=23.162.144.120; user="MikrotikBtest"; pswd="MikrotikBtest"; prot="tcp"};
     {name="Neterra"; ip=87.121.0.45; user="neterra"; pswd="neterra"; prot="tcp"};
-    {name="Yandex.ru";   ip=5.255.255.242; user=""; pswd="";  prot="tcp"};
+    {name="Yandex";  ip=5.255.255.242; user=""; pswd=""; prot="tcp"};
   }
 
   # channel speed measurement function --------------------------------------------------
